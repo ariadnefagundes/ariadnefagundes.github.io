@@ -1,0 +1,92 @@
+/* Smooth scroll */
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Body background */
+body {
+  background-color: #fbc1e4;
+  font-family: Arial, sans-serif;
+}
+
+/* Center all headers */
+h1, h2, h3 {
+  text-align: center;
+}
+
+/* Wrapper styling */
+#wrapper {
+  width: 80%;
+  margin: auto;
+  background-color: #fef1f8;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  padding: 20px;
+}
+
+/* All divs in main */
+main div {
+  width: 90%;
+  margin: auto;
+}
+
+/* itembox class */
+.itembox {
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+  background-color: #e6f7ff;
+  color: #333;
+  padding: 15px;
+  margin-bottom: 20px;
+}
+
+/* favorite class */
+.favorite {
+  border: 2px dashed #ff00f7;
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px rgb(255, 0, 174,0.3);
+  background-color: #f9d7f8;
+  color: #5a0707;
+  padding: 15px;
+  margin-bottom: 20px;
+}
+
+/* List styles */
+ul {
+  background-color: #e6f7ff;
+  list-style-type: square;
+  padding: 15px;
+}
+
+ol {
+  background-color: #e6f7ff;
+  list-style-type: upper-roman;
+  padding: 15px;
+}
+
+/* Nav bar styles */
+nav {
+  background-color: #333;
+  text-align: center;
+  padding: 10px 0;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: #ff00ea;
+}
+
+/* Footer style */
+footer {
+  text-align: center;
+  margin-top: 30px;
+  padding-top: 10px;
+  border-top: 1px solid #ccc;
+}
