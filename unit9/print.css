@@ -1,0 +1,42 @@
+/* Show header and all descendants of #center */
+header,
+#center,
+#center * {
+  display: revert !important;
+  visibility: visible !important;
+}
+
+/* Hide everything else inside body that's NOT header or #center */
+body > *:not(#container) {
+  display: none !important;
+}
+
+/* Hide sidebar and footer inside container */
+#nav,
+#sidebar,
+#right-sidebar,
+#footer {
+  display: none !important;
+}
+
+/* Hide images */
+img {
+  display: none !important;
+}
+
+/* Enlarge font size for printing */
+body {
+  font-size: 1.25em;
+}
+
+/* Set all background colors to white and all text to black */
+* {
+  background: white !important;
+  color: black !important;
+}
+
+/* Show URLs after each hyperlink */
+a::after {
+  content: " (" attr(href) ")";
+  font-size: 0.9em;
+}
