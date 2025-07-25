@@ -1,42 +1,47 @@
-/* Show header and all descendants of #center */
-header,
-#center,
-#center * {
-  display: revert !important;
-  visibility: visible !important;
-}
+@media print {
+  /* Show header and #center content */
+  header,
+  #center,
+  #center * {
+    display: revert !important;
+    visibility: visible !important;
+  }
 
-/* Hide everything else inside body that's NOT header or #center */
-body > *:not(#container) {
-  display: none !important;
-}
+  /* Hide everything outside of #container */
+  body > *:not(#container) {
+    display: none !important;
+  }
 
-/* Hide sidebar and footer inside container */
-#nav,
-#sidebar,
-#right-sidebar,
-#footer {
-  display: none !important;
-}
+  /* Hide unwanted layout sections */
+  #nav,
+  #sidebar,
+  #right-sidebar,
+  #footer {
+    display: none !important;
+  }
 
-/* Hide images */
-img {
-  display: none !important;
-}
+  /* Hide ALL images inside #center and elsewhere */
+  img, #center img {
+    display: none !important;
+    visibility: hidden !important;
+  }
 
-/* Enlarge font size for printing */
-body {
-  font-size: 1.25em;
-}
+  /* Enlarge text for better print readability */
+  body {
+    font-size: 1.25em !important;
+    color: black !important;
+    background: white !important;
+  }
 
-/* Set all background colors to white and all text to black */
-* {
-  background: white !important;
-  color: black !important;
-}
+  /* Apply universal white background and black text */
+  * {
+    background: white !important;
+    color: black !important;
+  }
 
-/* Show URLs after each hyperlink */
-a::after {
-  content: " (" attr(href) ")";
-  font-size: 0.9em;
+  /* Append URL after links */
+  a::after {
+    content: " (" attr(href) ")";
+    font-size: 0.9em;
+  }
 }
