@@ -1,0 +1,136 @@
+/* General Body Styling */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f0f8ff;
+  color: #002f5f;
+  margin: 20px;
+}
+
+/* Headings */
+h1, h2 {
+  color: #003e80;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+/* Links */
+a {
+  color: #0055aa;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: #003366;
+}
+
+/* Table Styling */
+table {
+  width: 90%;
+  margin: 20px auto;
+  border-collapse: collapse;
+  background-color: #ffffff;
+  border: 2px solid #99ccee;
+  box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+th, td {
+  border: 1px solid #99ccee;
+  padding: 12px;
+  text-align: left;
+  vertical-align: top;
+}
+
+th {
+  background-color: #d9eaff;
+  color: #003366;
+}
+
+td ul {
+  padding-left: 20px;
+  margin: 0;
+}
+
+td li {
+  margin-bottom: 4px;
+}
+
+/* Ingredient Images */
+img.ingredient {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  border: 1px solid #cce6ff;
+  display: block;
+  margin: auto;
+}
+
+/* Finished Dish Image */
+img.finished {
+  width: 85%;
+  max-width: 500px;
+  height: auto;
+  display: block;
+  margin: 15px auto;
+  border-radius: 12px;
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.2);
+  border: 2px solid #cce6ff;
+}
+
+
+/* TOC or Nav Box */
+#toc, nav {
+  background-color: #e1f0ff;
+  border: 2px solid #66b3ff;
+  padding: 15px;
+  width: 85%;
+  margin: 20px auto;
+  border-radius: 8px;
+  box-shadow: 1px 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* List cleanup */
+#toc ul, nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+#toc li, nav li {
+  margin: 10px 0;
+}
+
+/* Image Carousel Container */
+.carousel {
+  width: 90%;
+  margin: 30px auto;
+  overflow-x: auto;
+  overflow-y: hidden;
+  white-space: nowrap;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+  padding: 15px;
+}
+
+/* Inner Track */
+.carousel-track {
+  display: flex;
+  gap: 15px;
+}
+
+/* Individual Images */
+.carousel img {
+  width: 300px;
+  height: 200px;
+  object-fit: cover;
+  flex-shrink: 0;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* shadow */
+  border: 1px solid #cce6ff;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
